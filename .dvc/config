@@ -1,2 +1,5 @@
 [core]
     analytics = false
+    remote = teamdrive
+['remote "teamdrive"']
+    url = gdrive://1GT5AsAhcTGXloQyQxxzMzi_I66mxvfe2
