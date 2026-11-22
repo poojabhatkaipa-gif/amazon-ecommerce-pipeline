@@ -1,4 +1,4 @@
-# RecoMart - End-to-End Data Management Pipeline for a Recommendation System
+# Amazon - End-to-End Data Management Pipeline for a Recommendation System
 
 DMML Experiential Learning assignment (S1-26, DSEZG529). Amazon e-commerce transactions (1,000,000 rows) + DummyJSON product API
 -> raw lake -> validation -> cleaning -> transformation -> analytics / SQL warehouse -> feature store -> models -> Dagster orchestration, versioned with DVC.
