@@ -1,0 +1,5 @@
+outs:
+- md5: e677ef0c57f3320807d4488d12bbac0d
+  size: 40009526
+  hash: md5
+  path: amazon_ecommerce.zip

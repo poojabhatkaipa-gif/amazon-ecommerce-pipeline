@@ -1,0 +1,134 @@
+{
+  "run_timestamp_utc": "2026-11-22T06:36:06.360796+00:00",
+  "mode": "FULL",
+  "input_file": "C:\\Users\\Pooja\\Downloads\\amazon-ecommerce-pipeline-share\\amazon-ecommerce-pipeline\\data\\processed\\cleaned_transactions.parquet",
+  "runtime_seconds": 19.82,
+  "input_rows": 1000000,
+  "output_rows": {
+    "transformed": 1000000,
+    "customer": 603815,
+    "category": 16
+  },
+  "unique_customers": 603815,
+  "category_subcategory_groups": 16,
+  "reconciliation": {
+    "all_passed": true,
+    "checks": {
+      "transformed_rows_equal_cleaned_rows": true,
+      "customer_transaction_count_sums_to_rows": true,
+      "category_transaction_count_sums_to_rows": true,
+      "customer_total_value_matches": true,
+      "category_total_value_matches": true,
+      "customer_returned_count_matches": true,
+      "category_returned_count_matches": true,
+      "customer_user_id_unique": true,
+      "category_keys_unique": true,
+      "no_nulls_in_new_features": true,
+      "original_final_price_preserved": true,
+      "original_discount_preserved": true
+    }
+  },
+  "pricing_feature_stats": {
+    "discount_amount": {
+      "count": 1000000.0,
+      "mean": 3285.242108279999,
+      "std": 4646.358245882721,
+      "min": 10.240000000000009,
+      "25%": 664.1674999999999,
+      "50%": 1533.5900000000004,
+      "75%": 3751.4424999999987,
+      "max": 31921.119999999995
+    },
+    "effective_discount_pct": {
+      "count": 1000000.0,
+      "mean": 28.996157817932236,
+      "std": 14.681077921094818,
+      "min": 5.0000646546150485,
+      "25%": 16.914748921690904,
+      "50%": 28.068168351398818,
+      "75%": 39.23803263897993,
+      "max": 70.00009237277959
+    },
+    "rows_with_negative_discount_amount": 0,
+    "rows_where_source_discount_differs_from_effective_by_over_0_5pp": 0
+  },
+  "totals": {
+    "total_purchase_value": 9938876984.9,
+    "returned_purchase_value": 1123857728.1200001,
+    "returned_transactions": 115990
+  },
+  "date_range": {
+    "min": "2024-03-31T00:00:00",
+    "max": "2026-03-31T00:00:00"
+  },
+  "output_files": {
+    "transformed": "C:\\Users\\Pooja\\Downloads\\amazon-ecommerce-pipeline-share\\amazon-ecommerce-pipeline\\data\\processed\\transformed_transactions.parquet",
+    "customer": "C:\\Users\\Pooja\\Downloads\\amazon-ecommerce-pipeline-share\\amazon-ecommerce-pipeline\\data\\processed\\customer_summary.parquet",
+    "category": "C:\\Users\\Pooja\\Downloads\\amazon-ecommerce-pipeline-share\\amazon-ecommerce-pipeline\\data\\processed\\category_summary.parquet",
+    "report": "C:\\Users\\Pooja\\Downloads\\amazon-ecommerce-pipeline-share\\amazon-ecommerce-pipeline\\data\\processed\\transformation_report.json"
+  },
+  "dtypes": {
+    "transformed": {
+      "source_row": "int64",
+      "user_id": "string",
+      "product_id": "string",
+      "category": "string",
+      "subcategory": "string",
+      "brand": "string",
+      "price": "float64",
+      "discount": "float64",
+      "final_price": "float64",
+      "rating": "float64",
+      "review_count": "int64",
+      "stock": "int64",
+      "seller_id": "string",
+      "seller_rating": "float64",
+      "purchase_date": "datetime64[ns]",
+      "is_returned": "bool",
+      "shipping_time_days": "int64",
+      "delivery_status": "string",
+      "location": "string",
+      "device": "string",
+      "payment_method": "string",
+      "outlier_price": "bool",
+      "outlier_final_price": "bool",
+      "outlier_review_count": "bool",
+      "outlier_stock": "bool",
+      "outlier_shipping_time_days": "bool",
+      "is_outlier_any": "bool",
+      "discount_amount": "float64",
+      "effective_discount_pct": "float64",
+      "purchase_year": "int64",
+      "purchase_month": "int64",
+      "purchase_month_name": "object",
+      "purchase_quarter": "int64",
+      "purchase_year_month": "object"
+    },
+    "customer": {
+      "user_id": "string",
+      "transaction_count": "int64",
+      "total_purchase_value": "float64",
+      "average_purchase_value": "float64",
+      "returned_transaction_count": "int64",
+      "return_rate_pct": "float64",
+      "first_purchase_date": "datetime64[ns]",
+      "last_purchase_date": "datetime64[ns]",
+      "non_returned_transaction_count": "int64",
+      "returned_purchase_value": "float64",
+      "total_purchase_value_excluding_returns": "float64"
+    },
+    "category": {
+      "category": "string",
+      "subcategory": "string",
+      "transaction_count": "int64",
+      "total_purchase_value": "float64",
+      "average_price": "float64",
+      "average_final_price": "float64",
+      "average_rating": "float64",
+      "returned_transaction_count": "int64",
+      "return_rate_pct": "float64",
+      "returned_purchase_value": "float64",
+      "total_purchase_value_excluding_returns": "float64"
+    }
+  }
+}

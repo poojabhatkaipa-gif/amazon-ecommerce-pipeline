@@ -1,0 +1,217 @@
+{
+  "run_timestamp_utc": "2026-11-22T06:35:44.958849+00:00",
+  "mode": "FULL",
+  "input_file": "C:\\Users\\Pooja\\Downloads\\amazon-ecommerce-pipeline-share\\amazon-ecommerce-pipeline\\data\\extracted\\amazon_ecommerce_1M.csv",
+  "runtime_seconds": 69.35,
+  "input_rows": 1000000,
+  "valid_rows": 1000000,
+  "quarantined_invalid_rows": 0,
+  "duplicates_removed": 0,
+  "quarantine_file_rows": 0,
+  "extra_columns_ignored": [],
+  "null_counts_raw": {
+    "user_id": 0,
+    "product_id": 0,
+    "category": 0,
+    "subcategory": 0,
+    "brand": 0,
+    "price": 0,
+    "discount": 0,
+    "final_price": 0,
+    "rating": 0,
+    "review_count": 0,
+    "stock": 0,
+    "seller_id": 0,
+    "seller_rating": 0,
+    "purchase_date": 0,
+    "is_returned": 0,
+    "shipping_time_days": 0,
+    "delivery_status": 0,
+    "location": 0,
+    "device": 0,
+    "payment_method": 0
+  },
+  "null_counts_cleaned": {
+    "user_id": 0,
+    "product_id": 0,
+    "category": 0,
+    "subcategory": 0,
+    "brand": 0,
+    "price": 0,
+    "discount": 0,
+    "final_price": 0,
+    "rating": 0,
+    "review_count": 0,
+    "stock": 0,
+    "seller_id": 0,
+    "seller_rating": 0,
+    "purchase_date": 0,
+    "is_returned": 0,
+    "shipping_time_days": 0,
+    "delivery_status": 0,
+    "location": 0,
+    "device": 0,
+    "payment_method": 0
+  },
+  "conversion_failures": {
+    "price": 0,
+    "discount": 0,
+    "final_price": 0,
+    "rating": 0,
+    "seller_rating": 0,
+    "review_count": 0,
+    "stock": 0,
+    "shipping_time_days": 0,
+    "purchase_date": 0,
+    "is_returned": 0
+  },
+  "rejection_reason_counts": {},
+  "validation_results": {
+    "price > 0": {
+      "violations": 0,
+      "status": "PASSED"
+    },
+    "0 <= discount <= 100": {
+      "violations": 0,
+      "status": "PASSED"
+    },
+    "final_price >= 0": {
+      "violations": 0,
+      "status": "PASSED"
+    },
+    "1 <= rating <= 5": {
+      "violations": 0,
+      "status": "PASSED"
+    },
+    "1 <= seller_rating <= 5": {
+      "violations": 0,
+      "status": "PASSED"
+    },
+    "stock >= 0": {
+      "violations": 0,
+      "status": "PASSED"
+    },
+    "review_count >= 0": {
+      "violations": 0,
+      "status": "PASSED"
+    },
+    "shipping_time_days >= 0": {
+      "violations": 0,
+      "status": "PASSED"
+    },
+    "purchase_date parseable": {
+      "violations": 0,
+      "status": "PASSED"
+    }
+  },
+  "outliers": {
+    "method": "IQR Tukey fences (multiplier=1.5); flagged, not removed",
+    "rows_with_any_outlier_flag": 202955,
+    "by_column": {
+      "price": {
+        "lower_bound": -14451.355,
+        "upper_bound": 31285.985,
+        "outlier_count": 129873,
+        "outlier_pct": 12.9873
+      },
+      "final_price": {
+        "lower_bound": -11311.835,
+        "upper_bound": 23402.205,
+        "outlier_count": 131353,
+        "outlier_pct": 13.1353
+      },
+      "review_count": {
+        "lower_bound": -33.5,
+        "upper_bound": 82.5,
+        "outlier_count": 78046,
+        "outlier_pct": 7.8046
+      },
+      "stock": {
+        "lower_bound": -250.0,
+        "upper_bound": 750.0,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "shipping_time_days": {
+        "lower_bound": -2.5,
+        "upper_bound": 9.5,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      }
+    }
+  },
+  "categorical_normalization_changes": {
+    "category": 0,
+    "subcategory": 0,
+    "brand": 0,
+    "delivery_status": 0,
+    "location": 0,
+    "device": 0,
+    "payment_method": 0
+  },
+  "categorical_profile": {
+    "category": 5,
+    "subcategory": 16,
+    "brand": 12,
+    "delivery_status": 4,
+    "location": 5,
+    "device": 3,
+    "payment_method": 4
+  },
+  "delivery_status_distribution": {
+    "Delivered": 295234,
+    "Delayed": 294983,
+    "In Transit": 293793,
+    "Returned": 115990
+  },
+  "is_returned_distribution": {
+    "False": 884010,
+    "True": 115990
+  },
+  "observations": {
+    "final_price_greater_than_price_rows": 0,
+    "rows_where_discount_does_not_reproduce_final_price": 0,
+    "subcategories_under_multiple_categories": 0
+  },
+  "purchase_date_min": "2024-03-31T00:00:00",
+  "purchase_date_max": "2026-03-31T00:00:00",
+  "reconciliation": {
+    "input_rows": 1000000,
+    "valid_plus_invalid_plus_duplicates": 1000000,
+    "balanced": true
+  },
+  "output_files": {
+    "cleaned": "C:\\Users\\Pooja\\Downloads\\amazon-ecommerce-pipeline-share\\amazon-ecommerce-pipeline\\data\\processed\\cleaned_transactions.parquet",
+    "quarantined": "C:\\Users\\Pooja\\Downloads\\amazon-ecommerce-pipeline-share\\amazon-ecommerce-pipeline\\data\\processed\\quarantined_transactions.parquet",
+    "report": "C:\\Users\\Pooja\\Downloads\\amazon-ecommerce-pipeline-share\\amazon-ecommerce-pipeline\\data\\processed\\cleaning_report.json"
+  },
+  "cleaned_dtypes": {
+    "source_row": "int64",
+    "user_id": "string",
+    "product_id": "string",
+    "category": "string",
+    "subcategory": "string",
+    "brand": "string",
+    "price": "float64",
+    "discount": "float64",
+    "final_price": "float64",
+    "rating": "float64",
+    "review_count": "int64",
+    "stock": "int64",
+    "seller_id": "string",
+    "seller_rating": "float64",
+    "purchase_date": "datetime64[ns]",
+    "is_returned": "bool",
+    "shipping_time_days": "int64",
+    "delivery_status": "string",
+    "location": "string",
+    "device": "string",
+    "payment_method": "string",
+    "outlier_price": "bool",
+    "outlier_final_price": "bool",
+    "outlier_review_count": "bool",
+    "outlier_stock": "bool",
+    "outlier_shipping_time_days": "bool",
+    "is_outlier_any": "bool"
+  }
+}

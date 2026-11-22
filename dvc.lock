@@ -1,0 +1,141 @@
+schema: '2.0'
+stages:
+  clean:
+    cmd: python src/02_clean.py
+    deps:
+    - path: data/extracted/amazon_ecommerce_1M.csv
+      hash: md5
+      md5: e72c0dd47fa4e3e6f6100bb63c256f3f
+      size: 133349813
+    - path: src/02_clean.py
+      hash: md5
+      md5: a74c37afd0010505526191d6cd54a449
+      size: 23745
+    outs:
+    - path: data/processed/cleaned_transactions.parquet
+      hash: md5
+      md5: 37e2ce0ce6f0e30fc474af4444559bf7
+      size: 37153432
+    - path: data/processed/cleaning_report.json
+      hash: md5
+      md5: 06d631f3af41d2ee3727afdc580d5c69
+      size: 5788
+    - path: data/processed/quarantined_transactions.parquet
+      hash: md5
+      md5: ea9c4305f7e63a5301800cb08aab40bb
+      size: 10144
+  transform:
+    cmd: python src/03_transform.py
+    deps:
+    - path: data/processed/cleaned_transactions.parquet
+      hash: md5
+      md5: 37e2ce0ce6f0e30fc474af4444559bf7
+      size: 37153432
+    - path: src/03_transform.py
+      hash: md5
+      md5: e8e15d1c0ba65e36b37d2be3431cbcc9
+      size: 16224
+    outs:
+    - path: data/processed/category_summary.parquet
+      hash: md5
+      md5: 71a329a0c14f4cda0410a80c70f876e8
+      size: 8826
+    - path: data/processed/customer_summary.parquet
+      hash: md5
+      md5: 232d45d8e28ef2cd345d7cd889f37356
+      size: 17795085
+    - path: data/processed/transformation_report.json
+      hash: md5
+      md5: ff62d8325c236d574b6260971b34263d
+      size: 4902
+    - path: data/processed/transformed_transactions.parquet
+      hash: md5
+      md5: dd185160d1a1905c34e47b116fc1e39d
+      size: 53518598
+  analytics:
+    cmd: python src/04_analytics.py
+    deps:
+    - path: data/processed/transformed_transactions.parquet
+      hash: md5
+      md5: dd185160d1a1905c34e47b116fc1e39d
+      size: 53518598
+    - path: sql/schema.sql
+      hash: md5
+      md5: b6c3a0e23f76fe862f41c675aa22f94d
+      size: 2232
+    - path: src/04_analytics.py
+      hash: md5
+      md5: ce955d146b945b71366081431c243cfa
+      size: 11148
+    outs:
+    - path: data/analytics/analytics_report.json
+      hash: md5
+      md5: 5ca8c3eb088638145a4999321e967a6a
+      size: 1308
+    - path: data/warehouse/recomart.db
+      hash: md5
+      md5: 9922189e48355fd9b4f56a1bdd11bdb5
+      size: 239448064
+    - path: reports/figures
+      hash: md5
+      md5: 3ca2fcf6174a7f9a75edd5f77667ba70.dir
+      size: 475546
+      nfiles: 10
+  features:
+    cmd: python src/05_features.py
+    deps:
+    - path: data/processed/transformed_transactions.parquet
+      hash: md5
+      md5: dd185160d1a1905c34e47b116fc1e39d
+      size: 53518598
+    - path: src/05_features.py
+      hash: md5
+      md5: cedab817215f60e5b843387055ed4dd6
+      size: 9228
+    - path: src/feature_store.py
+      hash: md5
+      md5: 6ea30abccb152dda4f8db0fd6cb45835
+      size: 4118
+    outs:
+    - path: data/feature_store
+      hash: md5
+      md5: 3345c2b3fc3c5f16e3a10bb2c49ae056.dir
+      size: 21851568
+      nfiles: 4
+  train:
+    cmd: python src/06_train.py
+    deps:
+    - path: data/feature_store
+      hash: md5
+      md5: 3345c2b3fc3c5f16e3a10bb2c49ae056.dir
+      size: 21851568
+      nfiles: 4
+    - path: data/processed/transformed_transactions.parquet
+      hash: md5
+      md5: dd185160d1a1905c34e47b116fc1e39d
+      size: 53518598
+    - path: src/06_train.py
+      hash: md5
+      md5: 16bb2832a54013800057d1a0e70b28c7
+      size: 11257
+    - path: src/feature_store.py
+      hash: md5
+      md5: 6ea30abccb152dda4f8db0fd6cb45835
+      size: 4118
+    outs:
+    - path: models/popularity.npz
+      hash: md5
+      md5: d433ae9d998c89dfd3a22d4903e0a8bf
+      size: 2519746
+    - path: models/svd_model.npz
+      hash: md5
+      md5: 7c5cbcdde9380aa3d4354e4400a573b9
+      size: 43670348
+    - path: models/train_matrix.npz
+      hash: md5
+      md5: ba05521e2f94d9fd2ee791503e3d38e8
+      size: 2840886
+    - path: reports/model_performance.json
+      hash: md5
+      md5: 1c535bbbca2c452ed1000c8a7fa04769
+      size: 2924

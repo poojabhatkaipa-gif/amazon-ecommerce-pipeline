@@ -1,0 +1,17 @@
+# environments / tooling
+.venv/
+.idea/
+__pycache__/
+*.pyc
+.DS_Store
+dagster_home/
+mlflow/
+.pytest_cache/
+# logs are local audit trails (kept out of git); data/ and models/ are versioned with DVC, not git
+logs/
+
+# development-sample outputs (regenerable)
+*_sample.*
+*_sample/
+data/extracted/amazon_ecommerce_sample_50000.csv
+reports/eda.html

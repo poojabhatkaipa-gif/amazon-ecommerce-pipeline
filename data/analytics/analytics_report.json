@@ -1,0 +1,57 @@
+{
+  "interaction_stats": {
+    "rows": 1000000,
+    "users": 603815,
+    "products": 89999,
+    "distinct_pairs": 999993,
+    "sparsity_pct": 99.99816,
+    "users_with_ge2_products": 274067,
+    "share_single_product_users_pct": 54.61,
+    "items_per_user": {
+      "count": 603815.0,
+      "mean": 1.656,
+      "std": 0.869,
+      "min": 1.0,
+      "25%": 1.0,
+      "50%": 1.0,
+      "75%": 2.0,
+      "max": 9.0
+    },
+    "buyers_per_item": {
+      "count": 89999.0,
+      "mean": 11.111,
+      "std": 3.329,
+      "min": 1.0,
+      "25%": 9.0,
+      "50%": 11.0,
+      "75%": 13.0,
+      "max": 28.0
+    },
+    "rating_mean": 3.9272,
+    "date_min": "2024-03-31",
+    "date_max": "2026-03-31"
+  },
+  "figures": [
+    "rating_hist.png",
+    "user_activity_hist.png",
+    "item_popularity.png",
+    "price_hist.png",
+    "monthly_value.png",
+    "category_value.png",
+    "heatmap_category_brand_rating.png",
+    "sparsity_heatmap.png",
+    "correlation_heatmap.png"
+  ],
+  "tables": [
+    "monthly_metrics",
+    "category_metrics",
+    "brand_metrics",
+    "top_items",
+    "user_segments",
+    "device_metrics",
+    "payment_method_metrics",
+    "location_metrics"
+  ],
+  "net_value_total": 8815019256.780005,
+  "gross_value_total": 9938876984.9
+}

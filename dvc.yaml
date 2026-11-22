@@ -1,0 +1,38 @@
+# Data lineage: raw (tracked via *.dvc files) -> cleaned -> transformed -> warehouse/features -> model
+# `dvc dag` draws it; `dvc repro` rebuilds stale stages; `dvc.lock` pins the md5 of every dep/out.
+stages:
+  clean:
+    cmd: python src/02_clean.py
+    deps: [src/02_clean.py, data/extracted/amazon_ecommerce_1M.csv]
+    outs:
+      - data/processed/cleaned_transactions.parquet
+      - data/processed/quarantined_transactions.parquet
+      - data/processed/cleaning_report.json: {cache: false}
+  transform:
+    cmd: python src/03_transform.py
+    deps: [src/03_transform.py, data/processed/cleaned_transactions.parquet]
+    outs:
+      - data/processed/transformed_transactions.parquet
+      - data/processed/customer_summary.parquet
+      - data/processed/category_summary.parquet
+      - data/processed/transformation_report.json: {cache: false}
+  analytics:
+    cmd: python src/04_analytics.py
+    deps: [src/04_analytics.py, sql/schema.sql, data/processed/transformed_transactions.parquet]
+    outs:
+      - data/warehouse/recomart.db
+      - data/analytics/analytics_report.json: {cache: false}
+      - reports/figures
+  features:
+    cmd: python src/05_features.py
+    deps: [src/05_features.py, src/feature_store.py, data/processed/transformed_transactions.parquet]
+    outs:
+      - data/feature_store: {persist: true}     # append-only: every run adds a version, never deleted
+  train:
+    cmd: python src/06_train.py
+    deps: [src/06_train.py, src/feature_store.py, data/processed/transformed_transactions.parquet, data/feature_store]
+    outs:
+      - models/svd_model.npz
+      - models/popularity.npz
+      - models/train_matrix.npz
+      - reports/model_performance.json: {cache: false}

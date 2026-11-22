@@ -1,0 +1,5 @@
+/cleaned_transactions.parquet
+/quarantined_transactions.parquet
+/transformed_transactions.parquet
+/customer_summary.parquet
+/category_summary.parquet
