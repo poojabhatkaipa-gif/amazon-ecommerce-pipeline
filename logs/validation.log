@@ -1,0 +1,24 @@
+2026-11-20 23:10:58,598 | INFO | Running validation pass 20261120T174058Z
+2026-11-20 23:10:58,598 | INFO | Checking transactions file: data/lake/raw/source=amazon_ecommerce_csv/type=transactions/ingest_date=2026-11-20/transactions_20261120T173903Z.csv
+2026-11-20 23:10:59,965 | INFO | Checking catalog JSON: data/lake/raw/source=dummyjson_api/type=product_catalog/ingest_date=2026-11-20/products_20261120T173903Z.json
+2026-11-20 23:10:59,969 | INFO | Saved validation report to data/processed/validation_report_20261120T174058Z.json [PASSED]
+2026-11-21 15:15:19,831 | INFO | Running validation pass 20261121T094519Z
+2026-11-21 15:15:19,832 | INFO | Checking transactions file: data/lake/raw/source=amazon_ecommerce_csv/type=transactions/ingest_date=2026-11-20/transactions_20261120T173903Z.csv
+2026-11-21 15:15:20,578 | INFO | Checking catalog JSON: data/lake/raw/source=dummyjson_api/type=product_catalog/ingest_date=2026-11-20/products_20261120T173903Z.json
+2026-11-21 15:15:20,589 | INFO | Saved validation report to data/processed/validation_report_20261121T094519Z.json [PASSED]
+2026-11-21 15:16:32,018 | INFO | Running validation pass 20261121T094632Z
+2026-11-21 15:16:32,019 | INFO | Checking transactions file: data/lake/raw/source=amazon_ecommerce_csv/type=transactions/ingest_date=2026-11-20/transactions_20261120T173903Z.csv
+2026-11-21 15:16:32,738 | INFO | Checking catalog JSON: data/lake/raw/source=dummyjson_api/type=product_catalog/ingest_date=2026-11-20/products_20261120T173903Z.json
+2026-11-21 15:16:32,744 | INFO | Saved validation report to data/processed/validation_report_20261121T094632Z.json [PASSED]
+2026-11-21 15:16:59,148 | INFO | Running validation pass 20261121T094659Z
+2026-11-21 15:16:59,149 | INFO | Checking transactions file: data/lake/raw/source=amazon_ecommerce_csv/type=transactions/ingest_date=2026-11-20/transactions_20261120T173903Z.csv
+2026-11-21 15:16:59,904 | INFO | Checking catalog JSON: data/lake/raw/source=dummyjson_api/type=product_catalog/ingest_date=2026-11-20/products_20261120T173903Z.json
+2026-11-21 15:16:59,910 | INFO | Saved validation report to data/processed/validation_report_20261121T094659Z.json [PASSED]
+2026-11-22 11:49:38,125 | INFO | Running validation pass 20261122T061938Z
+2026-11-22 11:49:38,133 | INFO | Checking transactions file: data\lake\raw\source=amazon_ecommerce_csv\type=transactions\ingest_date=2026-11-20\transactions_20261120T173903Z.csv
+2026-11-22 11:49:44,800 | INFO | Checking catalog JSON: data\lake\raw\source=dummyjson_api\type=product_catalog\ingest_date=2026-11-20\products_20261120T173903Z.json
+2026-11-22 11:49:44,827 | INFO | Saved validation report to data\processed\validation_report_20261122T061938Z.json [PASSED]
+2026-11-22 12:04:23,745 | INFO | Running validation pass 20261122T063423Z
+2026-11-22 12:04:23,748 | INFO | Checking transactions file: data\lake\raw\source=amazon_ecommerce_csv\type=transactions\ingest_date=2026-11-20\transactions_20261120T173903Z.csv
+2026-11-22 12:04:34,028 | INFO | Checking catalog JSON: data\lake\raw\source=dummyjson_api\type=product_catalog\ingest_date=2026-11-20\products_20261120T173903Z.json
+2026-11-22 12:04:34,055 | INFO | Saved validation report to data\processed\validation_report_20261122T063423Z.json [PASSED]

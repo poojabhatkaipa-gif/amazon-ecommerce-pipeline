@@ -1,0 +1,108 @@
+2026-11-21 12:41:51,304 | INFO | Starting transformation run | mode=SAMPLE | input=/Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/cleaned_transactions_sample.parquet
+2026-11-21 12:41:58,650 | INFO | Loaded 50000 cleaned rows x 27 columns
+2026-11-21 12:41:59,055 | INFO | check transformed_rows_equal_cleaned_rows: OK
+2026-11-21 12:41:59,055 | INFO | check customer_transaction_count_sums_to_rows: OK
+2026-11-21 12:41:59,055 | INFO | check category_transaction_count_sums_to_rows: OK
+2026-11-21 12:41:59,055 | INFO | check customer_total_value_matches: OK
+2026-11-21 12:41:59,055 | INFO | check category_total_value_matches: OK
+2026-11-21 12:41:59,055 | INFO | check customer_returned_count_matches: OK
+2026-11-21 12:41:59,055 | INFO | check category_returned_count_matches: OK
+2026-11-21 12:41:59,055 | INFO | check customer_user_id_unique: OK
+2026-11-21 12:41:59,055 | INFO | check category_keys_unique: OK
+2026-11-21 12:41:59,055 | INFO | check no_nulls_in_new_features: OK
+2026-11-21 12:41:59,055 | INFO | check original_final_price_preserved: OK
+2026-11-21 12:41:59,055 | INFO | check original_discount_preserved: OK
+2026-11-21 12:41:59,201 | INFO | Wrote 50000 rows -> /Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/transformed_transactions_sample.parquet
+2026-11-21 12:41:59,231 | INFO | Wrote 48603 rows -> /Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/customer_summary_sample.parquet
+2026-11-21 12:41:59,233 | INFO | Wrote 16 rows -> /Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/category_summary_sample.parquet
+2026-11-21 12:41:59,251 | INFO | Transformation finished in 7.95s
+2026-11-21 12:50:00,039 | INFO | Starting transformation run | mode=FULL | input=/Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/cleaned_transactions.parquet
+2026-11-21 12:50:02,976 | INFO | Loaded 1000000 cleaned rows x 27 columns
+2026-11-21 12:50:11,500 | INFO | check transformed_rows_equal_cleaned_rows: OK
+2026-11-21 12:50:11,502 | INFO | check customer_transaction_count_sums_to_rows: OK
+2026-11-21 12:50:11,502 | INFO | check category_transaction_count_sums_to_rows: OK
+2026-11-21 12:50:11,502 | INFO | check customer_total_value_matches: OK
+2026-11-21 12:50:11,502 | INFO | check category_total_value_matches: OK
+2026-11-21 12:50:11,502 | INFO | check customer_returned_count_matches: OK
+2026-11-21 12:50:11,502 | INFO | check category_returned_count_matches: OK
+2026-11-21 12:50:11,502 | INFO | check customer_user_id_unique: OK
+2026-11-21 12:50:11,502 | INFO | check category_keys_unique: OK
+2026-11-21 12:50:11,502 | INFO | check no_nulls_in_new_features: OK
+2026-11-21 12:50:11,502 | INFO | check original_final_price_preserved: OK
+2026-11-21 12:50:11,502 | INFO | check original_discount_preserved: OK
+2026-11-21 12:50:13,620 | INFO | Wrote 1000000 rows -> /Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/transformed_transactions.parquet
+2026-11-21 12:50:13,947 | INFO | Wrote 603815 rows -> /Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/customer_summary.parquet
+2026-11-21 12:50:13,950 | INFO | Wrote 16 rows -> /Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/category_summary.parquet
+2026-11-21 12:50:14,026 | INFO | Transformation finished in 13.99s
+2026-11-21 15:15:21,584 | INFO | Starting transformation run | mode=SAMPLE | input=/Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/cleaned_transactions_sample.parquet
+2026-11-21 15:15:21,648 | INFO | Loaded 10000 cleaned rows x 27 columns
+2026-11-21 15:15:21,664 | INFO | check transformed_rows_equal_cleaned_rows: OK
+2026-11-21 15:15:21,664 | INFO | check customer_transaction_count_sums_to_rows: OK
+2026-11-21 15:15:21,664 | INFO | check category_transaction_count_sums_to_rows: OK
+2026-11-21 15:15:21,664 | INFO | check customer_total_value_matches: OK
+2026-11-21 15:15:21,664 | INFO | check category_total_value_matches: OK
+2026-11-21 15:15:21,664 | INFO | check customer_returned_count_matches: OK
+2026-11-21 15:15:21,664 | INFO | check category_returned_count_matches: OK
+2026-11-21 15:15:21,664 | INFO | check customer_user_id_unique: OK
+2026-11-21 15:15:21,664 | INFO | check category_keys_unique: OK
+2026-11-21 15:15:21,664 | INFO | check no_nulls_in_new_features: OK
+2026-11-21 15:15:21,664 | INFO | check original_final_price_preserved: OK
+2026-11-21 15:15:21,664 | INFO | check original_discount_preserved: OK
+2026-11-21 15:15:21,674 | INFO | Wrote 10000 rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/transformed_transactions_sample.parquet
+2026-11-21 15:15:21,678 | INFO | Wrote 9940 rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/customer_summary_sample.parquet
+2026-11-21 15:15:21,679 | INFO | Wrote 16 rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/category_summary_sample.parquet
+2026-11-21 15:15:21,681 | INFO | Transformation finished in 0.10s
+2026-11-21 15:16:33,770 | INFO | Starting transformation run | mode=SAMPLE | input=/Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/cleaned_transactions_sample.parquet
+2026-11-21 15:16:33,826 | INFO | Loaded 10000 cleaned rows x 27 columns
+2026-11-21 15:16:33,840 | INFO | check transformed_rows_equal_cleaned_rows: OK
+2026-11-21 15:16:33,840 | INFO | check customer_transaction_count_sums_to_rows: OK
+2026-11-21 15:16:33,840 | INFO | check category_transaction_count_sums_to_rows: OK
+2026-11-21 15:16:33,840 | INFO | check customer_total_value_matches: OK
+2026-11-21 15:16:33,840 | INFO | check category_total_value_matches: OK
+2026-11-21 15:16:33,840 | INFO | check customer_returned_count_matches: OK
+2026-11-21 15:16:33,840 | INFO | check category_returned_count_matches: OK
+2026-11-21 15:16:33,840 | INFO | check customer_user_id_unique: OK
+2026-11-21 15:16:33,840 | INFO | check category_keys_unique: OK
+2026-11-21 15:16:33,840 | INFO | check no_nulls_in_new_features: OK
+2026-11-21 15:16:33,840 | INFO | check original_final_price_preserved: OK
+2026-11-21 15:16:33,840 | INFO | check original_discount_preserved: OK
+2026-11-21 15:16:33,850 | INFO | Wrote 10000 rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/transformed_transactions_sample.parquet
+2026-11-21 15:16:33,854 | INFO | Wrote 9940 rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/customer_summary_sample.parquet
+2026-11-21 15:16:33,855 | INFO | Wrote 16 rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/category_summary_sample.parquet
+2026-11-21 15:16:33,857 | INFO | Transformation finished in 0.09s
+2026-11-21 15:17:07,342 | INFO | Starting transformation run | mode=FULL | input=/Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/cleaned_transactions.parquet
+2026-11-21 15:17:07,425 | INFO | Loaded 1000000 cleaned rows x 27 columns
+2026-11-21 15:17:08,036 | INFO | check transformed_rows_equal_cleaned_rows: OK
+2026-11-21 15:17:08,036 | INFO | check customer_transaction_count_sums_to_rows: OK
+2026-11-21 15:17:08,036 | INFO | check category_transaction_count_sums_to_rows: OK
+2026-11-21 15:17:08,036 | INFO | check customer_total_value_matches: OK
+2026-11-21 15:17:08,036 | INFO | check category_total_value_matches: OK
+2026-11-21 15:17:08,036 | INFO | check customer_returned_count_matches: OK
+2026-11-21 15:17:08,036 | INFO | check category_returned_count_matches: OK
+2026-11-21 15:17:08,036 | INFO | check customer_user_id_unique: OK
+2026-11-21 15:17:08,036 | INFO | check category_keys_unique: OK
+2026-11-21 15:17:08,036 | INFO | check no_nulls_in_new_features: OK
+2026-11-21 15:17:08,036 | INFO | check original_final_price_preserved: OK
+2026-11-21 15:17:08,036 | INFO | check original_discount_preserved: OK
+2026-11-21 15:17:08,600 | INFO | Wrote 1000000 rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/transformed_transactions.parquet
+2026-11-21 15:17:08,709 | INFO | Wrote 603815 rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/customer_summary.parquet
+2026-11-21 15:17:08,713 | INFO | Wrote 16 rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/category_summary.parquet
+2026-11-21 15:17:08,744 | INFO | Transformation finished in 1.40s
+2026-11-22 12:05:46,537 | INFO | Starting transformation run | mode=FULL | input=C:\Users\Pooja\Downloads\amazon-ecommerce-pipeline-share\amazon-ecommerce-pipeline\data\processed\cleaned_transactions.parquet
+2026-11-22 12:05:48,242 | INFO | Loaded 1000000 cleaned rows x 27 columns
+2026-11-22 12:06:03,150 | INFO | check transformed_rows_equal_cleaned_rows: OK
+2026-11-22 12:06:03,150 | INFO | check customer_transaction_count_sums_to_rows: OK
+2026-11-22 12:06:03,151 | INFO | check category_transaction_count_sums_to_rows: OK
+2026-11-22 12:06:03,151 | INFO | check customer_total_value_matches: OK
+2026-11-22 12:06:03,151 | INFO | check category_total_value_matches: OK
+2026-11-22 12:06:03,151 | INFO | check customer_returned_count_matches: OK
+2026-11-22 12:06:03,151 | INFO | check category_returned_count_matches: OK
+2026-11-22 12:06:03,151 | INFO | check customer_user_id_unique: OK
+2026-11-22 12:06:03,151 | INFO | check category_keys_unique: OK
+2026-11-22 12:06:03,151 | INFO | check no_nulls_in_new_features: OK
+2026-11-22 12:06:03,151 | INFO | check original_final_price_preserved: OK
+2026-11-22 12:06:03,151 | INFO | check original_discount_preserved: OK
+2026-11-22 12:06:05,895 | INFO | Wrote 1000000 rows -> C:\Users\Pooja\Downloads\amazon-ecommerce-pipeline-share\amazon-ecommerce-pipeline\data\processed\transformed_transactions.parquet
+2026-11-22 12:06:06,356 | INFO | Wrote 603815 rows -> C:\Users\Pooja\Downloads\amazon-ecommerce-pipeline-share\amazon-ecommerce-pipeline\data\processed\customer_summary.parquet
+2026-11-22 12:06:06,360 | INFO | Wrote 16 rows -> C:\Users\Pooja\Downloads\amazon-ecommerce-pipeline-share\amazon-ecommerce-pipeline\data\processed\category_summary.parquet
+2026-11-22 12:06:06,434 | INFO | Transformation finished in 19.90s

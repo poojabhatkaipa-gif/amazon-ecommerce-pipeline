@@ -1,0 +1,77 @@
+No dagster instance configuration file (dagster.yaml) found at /Users/a3295690/Downloads/amazon-ecommerce-pipeline/dagster_home. Defaulting to loading and storing all metadata with /Users/a3295690/Downloads/amazon-ecommerce-pipeline/dagster_home. If this is the desired behavior, create an empty dagster.yaml file in /Users/a3295690/Downloads/amazon-ecommerce-pipeline/dagster_home.
+2026-11-21 15:16:57 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - RUN_START - Started execution of run for "recomart_pipeline".
+2026-11-21 15:16:57 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - ENGINE_EVENT - Executing steps in process (pid: 88777)
+2026-11-21 15:16:57 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2026-11-21 15:16:57 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2026-11-21 15:16:57 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - LOGS_CAPTURED - Capturing logs for process (pid: 88777).
+2026-11-21 15:16:57 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - start - STEP_START - Started execution of step "start".
+2026-11-21 15:16:57 +0530 - dagster - INFO - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - start - pipeline started 2026-11-21T09:46:57+00:00
+2026-11-21 15:16:57 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - start - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+2026-11-21 15:16:57 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - start - STEP_SUCCESS - Finished execution of step "start" in 5.56ms.
+2026-11-21 15:16:57 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - inspect - STEP_START - Started execution of step "inspect".
+2026-11-21 15:16:57,803 | INFO | [inspect] START python 01_inspect.py
+2026-11-21 15:16:58,751 | INFO | [inspect] OK in 0.9s | gate: no gate
+2026-11-21 15:16:58 +0530 - dagster - INFO - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - inspect - inspect OK in 0.9s | no gate
+2026-11-21 15:16:58 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - inspect - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-11-21 15:16:58 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - inspect - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-11-21 15:16:58 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - inspect - STEP_SUCCESS - Finished execution of step "inspect" in 956ms.
+2026-11-21 15:16:58 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - ingest - STEP_START - Started execution of step "ingest".
+2026-11-21 15:16:58 +0530 - dagster - INFO - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - ingest - ingest skipped (skip_ingest=true): reusing existing raw lake
+2026-11-21 15:16:58 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - ingest - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-11-21 15:16:58 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - ingest - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-11-21 15:16:58 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - ingest - STEP_SUCCESS - Finished execution of step "ingest" in 5.37ms.
+2026-11-21 15:16:58 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - validate - STEP_START - Started execution of step "validate".
+2026-11-21 15:16:58,776 | INFO | [validate] START python 02_validate.py
+2026-11-21 15:16:59,980 | INFO | [validate] OK in 1.2s | gate: validation_report_20261121T094659Z.json PASSED, 1000000 rows
+2026-11-21 15:16:59 +0530 - dagster - INFO - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - validate - validate OK in 1.2s | validation_report_20261121T094659Z.json PASSED, 1000000 rows
+2026-11-21 15:16:59 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - validate - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-11-21 15:16:59 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - validate - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-11-21 15:16:59 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - validate - STEP_SUCCESS - Finished execution of step "validate" in 1.21s.
+2026-11-21 15:16:59 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - clean - STEP_START - Started execution of step "clean".
+2026-11-21 15:16:59,996 | INFO | [clean] START python 02_clean.py
+2026-11-21 15:17:07,004 | INFO | [clean] OK in 7.0s | gate: input=1000000 valid=1000000 quarantined=0 dup=0
+2026-11-21 15:17:07 +0530 - dagster - INFO - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - clean - clean OK in 7.0s | input=1000000 valid=1000000 quarantined=0 dup=0
+2026-11-21 15:17:07 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - clean - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-11-21 15:17:07 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - clean - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-11-21 15:17:07 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - clean - STEP_SUCCESS - Finished execution of step "clean" in 7.02s.
+2026-11-21 15:17:07 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - transform - STEP_START - Started execution of step "transform".
+2026-11-21 15:17:07,022 | INFO | [transform] START python 03_transform.py
+2026-11-21 15:17:08,784 | INFO | [transform] OK in 1.8s | gate: 1000000 rows, 603815 customers, 12/12 checks passed
+2026-11-21 15:17:08 +0530 - dagster - INFO - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - transform - transform OK in 1.8s | 1000000 rows, 603815 customers, 12/12 checks passed
+2026-11-21 15:17:08 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - transform - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-11-21 15:17:08 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - transform - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-11-21 15:17:08 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - transform - STEP_SUCCESS - Finished execution of step "transform" in 1.77s.
+2026-11-21 15:17:08 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - analytics - STEP_START - Started execution of step "analytics".
+2026-11-21 15:17:08,799 | INFO | [analytics] START python 04_analytics.py
+2026-11-21 15:17:18,755 | INFO | [analytics] OK in 10.0s | gate: 1000000 rows, sparsity 99.99816%
+2026-11-21 15:17:18 +0530 - dagster - INFO - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - analytics - analytics OK in 10.0s | 1000000 rows, sparsity 99.99816%
+2026-11-21 15:17:18 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - analytics - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-11-21 15:17:18 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - analytics - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-11-21 15:17:18 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - analytics - STEP_SUCCESS - Finished execution of step "analytics" in 9.96s.
+2026-11-21 15:17:18 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - features - STEP_START - Started execution of step "features".
+2026-11-21 15:17:18,773 | INFO | [features] START python 05_features.py
+2026-11-21 15:17:23,535 | INFO | [features] OK in 4.5s | gate: user_features v2 registered
+2026-11-21 15:17:23 +0530 - dagster - INFO - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - features - features OK in 4.5s | user_features v2 registered
+2026-11-21 15:17:23 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - features - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-11-21 15:17:23 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - features - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-11-21 15:17:23 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - features - STEP_SUCCESS - Finished execution of step "features" in 4.77s.
+2026-11-21 15:17:23 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - train - STEP_START - Started execution of step "train".
+2026-11-21 15:17:23,549 | INFO | [train] START python 06_train.py
+2026-11-21 15:18:19,657 | INFO | [train] OK in 56.1s | gate: 5 runs tracked, best ndcg@10=0.00013 (popularity)
+2026-11-21 15:18:19 +0530 - dagster - INFO - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - train - train OK in 56.1s | 5 runs tracked, best ndcg@10=0.00013 (popularity)
+2026-11-21 15:18:19 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - train - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-11-21 15:18:19 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - train - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-11-21 15:18:19 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - train - STEP_SUCCESS - Finished execution of step "train" in 56.14s.
+2026-11-21 15:18:19 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - ENGINE_EVENT - Finished steps in process (pid: 88777) in 1m21s
+2026-11-21 15:18:19 +0530 - dagster - DEBUG - recomart_pipeline - 065b82af-8a13-4dd2-9410-e26bf33631b4 - 88777 - RUN_SUCCESS - Finished execution of run for "recomart_pipeline".
+
+RUN 065b82af-8a13-4dd2-9410-e26bf33631b4: SUCCESS
+  OK   start
+  OK   inspect
+  OK   ingest
+  OK   validate
+  OK   clean
+  OK   transform
+  OK   analytics
+  OK   features
+  OK   train

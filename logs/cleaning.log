@@ -1,0 +1,48 @@
+2026-11-21 12:39:19,775 | INFO | Starting cleaning run | mode=SAMPLE(all rows; amazon_ecommerce_sample_50000.csv)
+2026-11-21 12:39:19,775 | INFO | Reading data/extracted/amazon_ecommerce_sample_50000.csv (sample_rows=None)
+2026-11-21 12:39:19,941 | INFO | Loaded 50000 rows x 20 columns
+2026-11-21 12:39:20,409 | INFO | Exact duplicate records found: 0
+2026-11-21 12:39:20,586 | INFO | Conversion failures: {}
+2026-11-21 12:39:25,377 | INFO | Wrote 50000 cleaned rows -> /Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/cleaned_transactions_sample.parquet
+2026-11-21 12:39:25,377 | INFO | Wrote 0 quarantined rows (0 invalid, 0 duplicates) -> /Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/quarantined_transactions_sample.parquet
+2026-11-21 12:39:25,379 | INFO | Cleaning finished | input=50000 valid=50000 invalid=0 duplicates=0 outlier_rows=10003
+2026-11-21 12:47:34,768 | INFO | Starting cleaning run | mode=FULL
+2026-11-21 12:47:34,769 | INFO | Reading /Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/extracted/amazon_ecommerce_1M.csv (sample_rows=None)
+2026-11-21 12:47:37,702 | INFO | Loaded 1000000 rows x 20 columns
+2026-11-21 12:47:48,217 | INFO | Exact duplicate records found: 0
+2026-11-21 12:47:51,492 | INFO | Conversion failures: {}
+2026-11-21 12:48:05,020 | INFO | Wrote 1000000 cleaned rows -> /Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/cleaned_transactions.parquet
+2026-11-21 12:48:05,020 | INFO | Wrote 0 quarantined rows (0 invalid, 0 duplicates) -> /Users/dharwin/Downloads/amazon-ecommerce-pipeline/data/processed/quarantined_transactions.parquet
+2026-11-21 12:48:05,023 | INFO | Cleaning finished | input=1000000 valid=1000000 invalid=0 duplicates=0 outlier_rows=202955
+2026-11-21 15:15:21,024 | INFO | Starting cleaning run | mode=SAMPLE(10000; amazon_ecommerce_1M.csv)
+2026-11-21 15:15:21,024 | INFO | Reading /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/extracted/amazon_ecommerce_1M.csv (sample_rows=10000)
+2026-11-21 15:15:21,037 | INFO | Loaded 10000 rows x 20 columns
+2026-11-21 15:15:21,057 | INFO | Exact duplicate records found: 0
+2026-11-21 15:15:21,074 | INFO | Conversion failures: {}
+2026-11-21 15:15:21,163 | INFO | Wrote 10000 cleaned rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/cleaned_transactions_sample.parquet
+2026-11-21 15:15:21,163 | INFO | Wrote 0 quarantined rows (0 invalid, 0 duplicates) -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/quarantined_transactions_sample.parquet
+2026-11-21 15:15:21,164 | INFO | Cleaning finished | input=10000 valid=10000 invalid=0 duplicates=0 outlier_rows=2003
+2026-11-21 15:16:33,178 | INFO | Starting cleaning run | mode=SAMPLE(10000; amazon_ecommerce_1M.csv)
+2026-11-21 15:16:33,179 | INFO | Reading /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/extracted/amazon_ecommerce_1M.csv (sample_rows=10000)
+2026-11-21 15:16:33,192 | INFO | Loaded 10000 rows x 20 columns
+2026-11-21 15:16:33,207 | INFO | Exact duplicate records found: 0
+2026-11-21 15:16:33,224 | INFO | Conversion failures: {}
+2026-11-21 15:16:33,304 | INFO | Wrote 10000 cleaned rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/cleaned_transactions_sample.parquet
+2026-11-21 15:16:33,304 | INFO | Wrote 0 quarantined rows (0 invalid, 0 duplicates) -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/quarantined_transactions_sample.parquet
+2026-11-21 15:16:33,305 | INFO | Cleaning finished | input=10000 valid=10000 invalid=0 duplicates=0 outlier_rows=2003
+2026-11-21 15:17:00,372 | INFO | Starting cleaning run | mode=FULL
+2026-11-21 15:17:00,374 | INFO | Reading /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/extracted/amazon_ecommerce_1M.csv (sample_rows=None)
+2026-11-21 15:17:01,450 | INFO | Loaded 1000000 rows x 20 columns
+2026-11-21 15:17:02,397 | INFO | Exact duplicate records found: 0
+2026-11-21 15:17:03,801 | INFO | Conversion failures: {}
+2026-11-21 15:17:06,946 | INFO | Wrote 1000000 cleaned rows -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/cleaned_transactions.parquet
+2026-11-21 15:17:06,946 | INFO | Wrote 0 quarantined rows (0 invalid, 0 duplicates) -> /Users/a3295690/Downloads/amazon-ecommerce-pipeline/data/processed/quarantined_transactions.parquet
+2026-11-21 15:17:06,947 | INFO | Cleaning finished | input=1000000 valid=1000000 invalid=0 duplicates=0 outlier_rows=202955
+2026-11-22 12:04:35,611 | INFO | Starting cleaning run | mode=FULL
+2026-11-22 12:04:35,612 | INFO | Reading C:\Users\Pooja\Downloads\amazon-ecommerce-pipeline-share\amazon-ecommerce-pipeline\data\extracted\amazon_ecommerce_1M.csv (sample_rows=None)
+2026-11-22 12:04:42,240 | INFO | Loaded 1000000 rows x 20 columns
+2026-11-22 12:05:03,735 | INFO | Exact duplicate records found: 0
+2026-11-22 12:05:14,296 | INFO | Conversion failures: {}
+2026-11-22 12:05:44,958 | INFO | Wrote 1000000 cleaned rows -> C:\Users\Pooja\Downloads\amazon-ecommerce-pipeline-share\amazon-ecommerce-pipeline\data\processed\cleaned_transactions.parquet
+2026-11-22 12:05:44,958 | INFO | Wrote 0 quarantined rows (0 invalid, 0 duplicates) -> C:\Users\Pooja\Downloads\amazon-ecommerce-pipeline-share\amazon-ecommerce-pipeline\data\processed\quarantined_transactions.parquet
+2026-11-22 12:05:44,961 | INFO | Cleaning finished | input=1000000 valid=1000000 invalid=0 duplicates=0 outlier_rows=202955

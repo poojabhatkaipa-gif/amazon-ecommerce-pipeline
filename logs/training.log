@@ -1,0 +1,42 @@
+2026-11-21 15:01:35,465 | INFO | train pairs=48619 users=48603 items=37556 | eval users=500
+2026-11-21 15:01:52,414 | INFO | train pairs=48619 users=48603 items=37556 | eval users=500
+2026-11-21 15:01:53,582 | INFO | popularity | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:01:53,783 | INFO | svd_k8 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:01:53,977 | INFO | svd_k16 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:01:58,993 | INFO | content_based | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:02:14,066 | INFO | train pairs=725926 users=603815 items=89973 | eval users=10000
+2026-11-21 15:02:19,146 | INFO | popularity | recall@10=0.00030 ndcg@10=0.00013
+2026-11-21 15:02:24,855 | INFO | svd_k16 | recall@10=0.00020 ndcg@10=0.00007
+2026-11-21 15:02:31,504 | INFO | svd_k32 | recall@10=0.00010 ndcg@10=0.00004
+2026-11-21 15:02:39,717 | INFO | svd_k64 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:03:02,309 | INFO | content_based | recall@10=0.00010 ndcg@10=0.00003
+2026-11-21 15:04:18,077 | INFO | train pairs=725926 users=603815 items=89973 | eval users=10000
+2026-11-21 15:04:23,265 | INFO | popularity | recall@10=0.00030 ndcg@10=0.00013
+2026-11-21 15:04:28,936 | INFO | svd_k16 | recall@10=0.00020 ndcg@10=0.00007
+2026-11-21 15:04:35,521 | INFO | svd_k32 | recall@10=0.00010 ndcg@10=0.00004
+2026-11-21 15:04:43,816 | INFO | svd_k64 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:05:06,512 | INFO | content_based | recall@10=0.00010 ndcg@10=0.00003
+2026-11-21 15:15:28,909 | INFO | train pairs=9940 users=9940 items=9406 | eval users=60
+2026-11-21 15:15:29,885 | INFO | popularity | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:15:29,932 | INFO | svd_k16 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:15:29,971 | INFO | svd_k32 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:15:30,030 | INFO | svd_k64 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:15:31,283 | INFO | content_based | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:16:41,090 | INFO | train pairs=9940 users=9940 items=9406 | eval users=60
+2026-11-21 15:16:42,030 | INFO | popularity | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:16:42,079 | INFO | svd_k16 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:16:42,117 | INFO | svd_k32 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:16:42,178 | INFO | svd_k64 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:16:43,438 | INFO | content_based | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:17:28,151 | INFO | train pairs=725926 users=603815 items=89973 | eval users=10000
+2026-11-21 15:17:33,009 | INFO | popularity | recall@10=0.00030 ndcg@10=0.00013
+2026-11-21 15:17:38,757 | INFO | svd_k16 | recall@10=0.00020 ndcg@10=0.00007
+2026-11-21 15:17:45,848 | INFO | svd_k32 | recall@10=0.00010 ndcg@10=0.00004
+2026-11-21 15:17:54,694 | INFO | svd_k64 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-21 15:18:17,357 | INFO | content_based | recall@10=0.00010 ndcg@10=0.00003
+2026-11-22 12:07:55,104 | INFO | train pairs=725926 users=603815 items=89973 | eval users=10000
+2026-11-22 12:08:08,150 | INFO | popularity | recall@10=0.00030 ndcg@10=0.00011
+2026-11-22 12:08:20,093 | INFO | svd_k16 | recall@10=0.00020 ndcg@10=0.00007
+2026-11-22 12:08:36,437 | INFO | svd_k32 | recall@10=0.00010 ndcg@10=0.00004
+2026-11-22 12:08:56,174 | INFO | svd_k64 | recall@10=0.00000 ndcg@10=0.00000
+2026-11-22 12:10:48,165 | INFO | content_based | recall@10=0.00010 ndcg@10=0.00003

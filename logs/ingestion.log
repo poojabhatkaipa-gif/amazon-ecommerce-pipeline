@@ -1,0 +1,25 @@
+2026-11-20 23:05:24,928 | INFO | Starting ingestion run 20261120T173524Z
+2026-11-20 23:05:24,928 | ERROR | Ingestion run 20261120T173524Z failed: amazon_ecommerce_1M.csv was not found in data/extracted or data/raw
+Traceback (most recent call last):
+  File "/Users/prathibhakannan/Downloads/amazon-ecommerce-pipeline/src/01_ingest.py", line 112, in run_ingestion
+    csv_rel = save_transactions_partition(run_date, run_tag)
+  File "/Users/prathibhakannan/Downloads/amazon-ecommerce-pipeline/src/01_ingest.py", line 63, in save_transactions_partition
+    source_csv = find_transactions_csv()
+  File "/Users/prathibhakannan/Downloads/amazon-ecommerce-pipeline/src/01_ingest.py", line 44, in find_transactions_csv
+    raise FileNotFoundError("amazon_ecommerce_1M.csv was not found in data/extracted or data/raw")
+FileNotFoundError: amazon_ecommerce_1M.csv was not found in data/extracted or data/raw
+2026-11-20 23:08:19,984 | INFO | Starting ingestion run 20261120T173819Z
+2026-11-20 23:08:19,984 | ERROR | Ingestion run 20261120T173819Z failed: amazon_ecommerce_1M.csv was not found in data/extracted or data/raw
+Traceback (most recent call last):
+  File "/Users/prathibhakannan/Downloads/amazon-ecommerce-pipeline/src/01_ingest.py", line 112, in run_ingestion
+    csv_rel = save_transactions_partition(run_date, run_tag)
+  File "/Users/prathibhakannan/Downloads/amazon-ecommerce-pipeline/src/01_ingest.py", line 63, in save_transactions_partition
+    source_csv = find_transactions_csv()
+  File "/Users/prathibhakannan/Downloads/amazon-ecommerce-pipeline/src/01_ingest.py", line 44, in find_transactions_csv
+    raise FileNotFoundError("amazon_ecommerce_1M.csv was not found in data/extracted or data/raw")
+FileNotFoundError: amazon_ecommerce_1M.csv was not found in data/extracted or data/raw
+2026-11-20 23:09:03,357 | INFO | Starting ingestion run 20261120T173903Z
+2026-11-20 23:09:03,469 | INFO | Saved transactions snapshot to data/lake/raw/source=amazon_ecommerce_csv/type=transactions/ingest_date=2026-11-20/transactions_20261120T173903Z.csv (127.17 MB)
+2026-11-20 23:09:03,470 | INFO | Requesting catalog API (1/3): https://dummyjson.com/products?limit=200
+2026-11-20 23:09:04,401 | INFO | Saved 194 catalog products to data/lake/raw/source=dummyjson_api/type=product_catalog/ingest_date=2026-11-20/products_20261120T173903Z.json
+2026-11-20 23:09:04,402 | INFO | Completed ingestion run 20261120T173903Z

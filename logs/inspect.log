@@ -1,0 +1,12 @@
+2026-11-21 15:15:19,171 | INFO | file=data/extracted/amazon_ecommerce_1M.csv size=127.2 MB encoding=utf-8 delimiter=','
+2026-11-21 15:15:19,399 | INFO | columns (20): ['user_id', 'product_id', 'category', 'subcategory', 'brand', 'price', 'discount', 'final_price', 'rating', 'review_count', 'stock', 'seller_id', 'seller_rating', 'purchase_date', 'shipping_time_days', 'location', 'device', 'payment_method', 'is_returned', 'delivery_status']
+2026-11-21 15:15:19,403 | INFO | schema matches the 20-column handoff contract
+2026-11-21 15:16:31,339 | INFO | file=data/extracted/amazon_ecommerce_1M.csv size=127.2 MB encoding=utf-8 delimiter=','
+2026-11-21 15:16:31,577 | INFO | columns (20): ['user_id', 'product_id', 'category', 'subcategory', 'brand', 'price', 'discount', 'final_price', 'rating', 'review_count', 'stock', 'seller_id', 'seller_rating', 'purchase_date', 'shipping_time_days', 'location', 'device', 'payment_method', 'is_returned', 'delivery_status']
+2026-11-21 15:16:31,581 | INFO | schema matches the 20-column handoff contract
+2026-11-21 15:16:58,495 | INFO | file=data/extracted/amazon_ecommerce_1M.csv size=127.2 MB encoding=utf-8 delimiter=','
+2026-11-21 15:16:58,711 | INFO | columns (20): ['user_id', 'product_id', 'category', 'subcategory', 'brand', 'price', 'discount', 'final_price', 'rating', 'review_count', 'stock', 'seller_id', 'seller_rating', 'purchase_date', 'shipping_time_days', 'location', 'device', 'payment_method', 'is_returned', 'delivery_status']
+2026-11-21 15:16:58,716 | INFO | schema matches the 20-column handoff contract
+2026-11-22 12:04:20,522 | INFO | file=data\extracted\amazon_ecommerce_1M.csv size=127.2 MB encoding=utf-8 delimiter=','
+2026-11-22 12:04:21,831 | INFO | columns (20): ['user_id', 'product_id', 'category', 'subcategory', 'brand', 'price', 'discount', 'final_price', 'rating', 'review_count', 'stock', 'seller_id', 'seller_rating', 'purchase_date', 'shipping_time_days', 'location', 'device', 'payment_method', 'is_returned', 'delivery_status']
+2026-11-22 12:04:22,071 | INFO | schema matches the 20-column handoff contract

@@ -1,0 +1,9 @@
+2026-11-21 14:59:43,378 | INFO | Feature versions: {'user_features': 1, 'item_features': 1, 'item_cooccurrence': 1} | users=48603 items=38375 cooc_pairs=2828
+2026-11-21 14:59:56,025 | INFO | Feature versions: {'user_features': 2, 'item_features': 2, 'item_cooccurrence': 2} | users=603815 items=89999 cooc_pairs=811120
+2026-11-21 15:00:11,522 | INFO | Feature versions: {'user_features': 1, 'item_features': 1, 'item_cooccurrence': 1} | users=603815 items=89999 cooc_pairs=811120
+2026-11-21 15:00:12,366 | INFO | Feature versions: {'user_features_sample': 1, 'item_features_sample': 1, 'item_cooccurrence_sample': 1} | users=48603 items=38375 cooc_pairs=2828
+2026-11-21 15:15:25,318 | INFO | Feature versions: {'user_features_sample': 2, 'item_features_sample': 2, 'item_cooccurrence_sample': 2} | users=9940 items=9459 cooc_pairs=120
+2026-11-21 15:16:37,530 | INFO | Feature versions: {'user_features_sample': 3, 'item_features_sample': 3, 'item_cooccurrence_sample': 3} | users=9940 items=9459 cooc_pairs=120
+2026-11-21 15:17:23,191 | INFO | Feature versions: {'user_features': 2, 'item_features': 2, 'item_cooccurrence': 2} | users=603815 items=89999 cooc_pairs=811120
+2026-11-21 15:28:06,996 | INFO | Feature versions: {'user_features': 3, 'item_features': 3, 'item_cooccurrence': 3} | users=603815 items=89999 cooc_pairs=811120
+2026-11-22 12:07:38,717 | INFO | Feature versions: {'user_features': 1, 'item_features': 1, 'item_cooccurrence': 1} | users=603815 items=89999 cooc_pairs=811120
